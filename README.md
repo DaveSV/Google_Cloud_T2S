@@ -9,3 +9,11 @@ Este código toma como base el provisto por Google (https://github.com/GoogleClo
 
 - Incorpora el archivo JSON con las credenciales de la cuenta de servicio de Google Cloud Platform como una variable de entorno. Obviamente, por razones de seguridad, en el repositorio no se adjuntan estas credenciales.
 - Sustituye el texto que va como argumento en el comando por un archivo de texto, asì el código lee el contenido del archivo en lugar de usar el texto directamente desde la línea de comandos. 
+
+Este código utiliza la biblioteca "google-cloud-texttospeech 2.14.1" (Google Cloud Texttospeech API client library). Mas información sore este recurso en https://pypi.org/project/google-cloud-texttospeech/
+
+Idiomas y voces compatibles
+
+Text-to-Speech proporciona las siguientes voces. La lista incluye las voces Neural2, Studio, Standard y WaveNet. Las voces Studio, Neural2 y WaveNet son voces de mejor calidad y con precios diferentes. El listado en https://cloud.google.com/text-to-speech/docs/voices?hl=es
+
+Revisa la calculadora de precios (https://cloud.google.com/products/calculator?hl=es) para verificar el costo de tu proyecto consumiendo esta API. Recuerda que Google Cloud tiene una base de consumo gratuito en muchos de sus servicios.
