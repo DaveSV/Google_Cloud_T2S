@@ -8,7 +8,10 @@ Text-to-Speech API te permite convertir palabras y oraciones en datos de audio c
 Este código toma como base el provisto por Google (https://github.com/GoogleCloudPlatform/python-docs-samples/blob/HEAD/texttospeech/snippets/synthesize_text.py) con las siguientes mejoras:
 
 - Incorpora el archivo JSON con las credenciales de la cuenta de servicio de Google Cloud Platform como una variable de entorno. Obviamente, por razones de seguridad, en el repositorio no se adjuntan estas credenciales.
-- Sustituye el texto que va como argumento en el comando por un archivo de texto, asì el código lee el contenido del archivo en lugar de usar el texto directamente desde la línea de comandos. 
+- Sustituye el texto que va como argumento en el comando por un archivo de texto, asì el código lee el contenido del archivo en lugar de usar el texto directamente desde la línea de comandos.
+
+  ![tetxt2audio1](https://github.com/user-attachments/assets/97efcd60-958d-4aca-afd9-124213a953a4)
+
 
 Este código utiliza la biblioteca "google-cloud-texttospeech 2.14.1" (Google Cloud Texttospeech API client library). Mas información sore este recurso en https://pypi.org/project/google-cloud-texttospeech/
 
