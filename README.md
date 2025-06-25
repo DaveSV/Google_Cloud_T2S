@@ -19,4 +19,7 @@ Idiomas y voces compatibles
 
 Text-to-Speech proporciona las siguientes voces. La lista incluye las voces Neural2, Studio, Standard y WaveNet. Las voces Studio, Neural2 y WaveNet son voces de mejor calidad y con precios diferentes. El listado en https://cloud.google.com/text-to-speech/docs/voices?hl=es
 
+![tetxt2audio2](https://github.com/user-attachments/assets/552b11e5-5612-4b90-8e08-817198d3b3a8)
+
+
 Revisa la calculadora de precios (https://cloud.google.com/products/calculator?hl=es) para verificar el costo de tu proyecto consumiendo esta API. Recuerda que Google Cloud tiene una base de consumo gratuito en muchos de sus servicios.
