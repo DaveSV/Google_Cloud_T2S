@@ -41,7 +41,7 @@ def synthesize_text(text):
     # Names of voices can be retrieved with client.list_voices().
     voice = texttospeech.VoiceSelectionParams(
         language_code="es-US",
-        name="es-US-Neural2-B",
+        name="es-US-Polyglot-1",
         ssml_gender=texttospeech.SsmlVoiceGender.MALE,
     )
 
@@ -54,9 +54,9 @@ def synthesize_text(text):
     )
 
     # The response's audio_content is binary.
-    with open("output.mp3", "wb") as out:
+    with open("intro_video.mp3", "wb") as out:
         out.write(response.audio_content)
-        print('Audio content written to file "output.mp3"')
+        print('Contenido de texto en archivo de audio "intro_video.mp3"')
 
 
 # [END tts_synthesize_text]
@@ -82,7 +82,7 @@ def synthesize_ssml(ssml):
     voice = texttospeech.VoiceSelectionParams(
         language_code="en-US",
         name="en-US-Standard-C",
-        ssml_gender=texttospeech.SsmlVoiceGender.FEMALE,
+        ssml_gender=texttospeech.SsmlVoiceGender.MALE,
     )
 
     audio_config = texttospeech.AudioConfig(
@@ -116,7 +116,7 @@ if __name__ == "__main__":
 
     if args.file:
         # Leer el contenido del archivo
-        with open(args.file, "r") as file:
+        with open(args.file, "r", encoding="utf-8") as file:
             text = file.read()
         synthesize_text(text)
     else:

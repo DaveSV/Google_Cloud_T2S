@@ -40,8 +40,8 @@ def synthesize_text(text):
     # Note: the voice can also be specified by name.
     # Names of voices can be retrieved with client.list_voices().
     voice = texttospeech.VoiceSelectionParams(
-        language_code="es-US",
-        name="es-US-Neural2-B",
+        language_code="en-US",
+        name="en-US-Polyglot-1",
         ssml_gender=texttospeech.SsmlVoiceGender.MALE,
     )
 
